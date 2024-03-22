@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Healthy food colection</title>
+</head>
+<body>
+    <div class="head-section">
+        <a href="main.html"><p class="home-page">Home</p></a>
+        <div class="head-peages">
+        <a href="#about-section1">
+        <p>About</p>
+        </a>
+        <a href="#team-info">
+        <p>Staff</p>
+        </a> 
+        <p>Shop</p>
+        </div>
+        <div class="contact-section">
+        <button class="contact-button" onclick="newElement()">Contact us</button>
+        <button class="shoping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+        <div class="contact-mail-sextion">
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +48 731 180 523</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i>  nazarhlivnij@gmail.com</p>
+        </div>
+        </div>
+    </div>
+    <div class="circle-container">
+        <div class="right-circle"></div>
+    </div>    
+    <div class="food-image" ><img src="7 (1).png"></div>
+    <div class="text-section">
+        <p class="welcome-section">WELCOME TO OUR</p>
+        <p class="food-colection">Healthy Food Collection</p>
+        <p class="text-colection">Here you can order healthy<br>
+            food. To do this, click on the button below.</p>
+            <button class="order-button"><p class="order-text">Order now</p></button>
+    </div>
+    <div id="about-section1"></div>
+    <div class="about-section">
+    <div id="about-info">Our unique story since 1996</div>
+    <p class="about-history">Since its inception in 1996, our journey has been one defined  by a passion for promoting healthy  living through nourishing and delicious food. </p>
+    <div class="img-left-section"></div>
+    <div class="img-right-section1"></div>
+    <div class="img-right-section2"></div>
+    <div class="img-right-section3"></div>
+    <div class="img-right-section4"></div>
+    </div>
+    <div id="team-section1"></div>
+    <div class="team-section">
+        <div id="team-info">Our Champion Team</div>
+        <p class="team-history">Your orders are prepared by real professionals</p>
+        <div class="img-team-section1"></div>
+        <div class="img-team-section2"></div>
+        <div class="img-team-section3"></div>
+        <div class="img-team-section4"></div>
+        <div class="staff-photo">
+            <div class="first-staff">
+                <div class="squarle-circle1"></div>
+                <p class="chef-text">Chef. Linner Ozik</p>
+                <p class="chef-text2">Head of staff</p>
+            </div>
+            <div class="second-staff">
+                <div class="squarle-circle2"></div>
+                <p class="chef-text">Chef. Menai Promise</p>
+                <p class="chef-text2">Order manager</p>
+            </div>
+            <div class="third-staff">
+                <div class="squarle-circle3"></div>
+                <p class="chef-text">Chef. Pickka Lin</p>
+                <p class="chef-text2">Head of Packaging</p>
+            </div>
+            <div class="fourth-staff">
+                <div class="squarle-circle4"></div>
+                <p class="chef-text">Chef. Banja Kovin</p>
+                <p class="chef-text2">Shopping Manager</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const allSectionsElement = document.querySelector('.contact-mail-sextion'); 
+        let openeElement = false;
+        function newElement(){
+            if(!openeElement){
+                allSectionsElement.classList.add('newElement');
+                openeElement = true;
+            } else if(openeElement) {
+                allSectionsElement.classList.remove('newElement');
+                openeElement = false;
+            }
+        }
+    </script>
+</body>
+</html>
